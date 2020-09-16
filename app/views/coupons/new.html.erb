@@ -1,0 +1,15 @@
+<h1>Create Coupon</h1>
+<%= form_tag controller: "coupons", action: "create", method: "get" do %>
+
+  <label>Store Name:</label>
+  <br>
+   <%=text_field_tag :"coupon[store]"%>
+  </br>
+   <label>Coupon Code:</label>
+  <br>
+    <%=number_field_tag :"coupon[coupon_code]"%>
+  </br>
+ 
+  <%=submit_tag "Submit Coupon"%>
+
+<%end%>

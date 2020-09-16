@@ -3,3 +3,7 @@
 <%@coupons.each do |coupon|%>
     <div><%=link_to coupon.store, coupon%></div>
 <%end%>
+<div><br></br></div>
+<div>
+    <%=link_to "Make a new coupon", new_coupon_path%>
+</div>
